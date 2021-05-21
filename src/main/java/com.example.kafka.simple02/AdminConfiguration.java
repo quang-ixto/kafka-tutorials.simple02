@@ -14,7 +14,7 @@ import java.util.Map;
 @Configuration
 public class AdminConfiguration {
 
-    @Value("${kafka.bootstrapServer}")
+    @Value("${spring.kafka.bootstrap-servers}")
     private String bootstrapServer;
 
     @Value("${kafka.topicName}")
@@ -29,7 +29,7 @@ public class AdminConfiguration {
 
     @Bean
     public NewTopic createTopic() {
-        return TopicBuilder.name("topicName")
+        return TopicBuilder.name(topicName)
                 .partitions(3)
                 .replicas(1)
                 .build();
