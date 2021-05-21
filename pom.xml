@@ -8,11 +8,11 @@
 		<version>2.4.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>kafka-tutorials.producer-consumer</groupId>
+	<groupId>com.example.kafka</groupId>
 	<artifactId>simple02</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>simple02</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Simple demo project for Spring Boot with Kafka. Producer and Consumer are configured in application.yml</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
